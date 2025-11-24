@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Envs
+.venv/
+.env
+.env.*
+
+# Models
+model/base/
+model/adapters/*.zip
+model/adapters/checkpoint-*/
+
+# Datasets
+dataset/*.csv
+dataset/*.jsonl
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# uv
+uv.lock
+
+# Cache
+.cache/

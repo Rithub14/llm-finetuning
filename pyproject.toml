@@ -1,0 +1,23 @@
+[project]
+name = "llm-finetuning-app"
+version = "0.1.0"
+description = "Customer Support LLM Backend with FastAPI and LoRA inference"
+requires-python = ">=3.10"
+
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "sqlmodel",
+    "pydantic>=2.0",
+    "python-dotenv",
+    "loguru",
+    "rich",
+    "transformers>=4.40.0",
+    "accelerate",
+    "safetensors",
+    "sentencepiece",
+    "torch",  # For Mac MPS support
+]
+
+[tool.uv]
+# uv will install dependencies from pyproject.toml
