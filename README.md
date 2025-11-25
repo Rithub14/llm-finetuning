@@ -1,7 +1,7 @@
 # Customer Support LLM — Finetuned Gemma 2B (LoRA)
 
 A lightweight, end-to-end AI assistant for customer support queries.
-Built using FastAPI, Streamlit, LoRA-finetuned Gemma-2B, and SQLite logging.
+Built using FastAPI, Streamlit, LoRA-finetuned Gemma-2B and SQLite logging.
 
 ## Overview
 
@@ -14,7 +14,7 @@ It exposes a clean backend API and a simple chat UI for interacting with the mod
 
 - FastAPI backend with clean modular structure
 
-- Streamlit chat interface (runs automatically when backend starts)
+- Streamlit chat interface
 
 - SQLite database logging of all user queries & model responses
 
@@ -88,11 +88,11 @@ SELECT * FROM querylog;
 The LoRA training was performed using:
 - transformers
 - peft
-- SFTTrainer (from TRL)
+- SFTTrainer
 - Kaggle → Bitext Customer Support dataset
 
 ### Output adapters are stored in:
 model/adapters/checkpoint-939/
 
 ## License
-MIT License (add LICENSE file if needed).
+MIT License.
