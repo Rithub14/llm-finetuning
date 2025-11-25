@@ -22,5 +22,8 @@ dependencies = [
     "httpx>=0.28.1",
 ]
 
+[tool.setuptools]
+packages = ["app"]
+
 [tool.uv]
 # uv will install dependencies from pyproject.toml
