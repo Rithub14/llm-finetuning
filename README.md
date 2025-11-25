@@ -48,57 +48,51 @@ llm_finetuning/
 
 ## Installation
 1️⃣ Create environment
+``` bash
 uv venv
 source .venv/bin/activate
+```
 
 2️⃣ Install dependencies
+``` bash
 uv sync
+```
 
 3️⃣ Start backend + UI
+```bash
 uvicorn app.main:app --reload
-
+```
 
 Streamlit automatically runs in background on port 8001.
-
 Open browser:
-
+```bash
 http://localhost:8001
+```
 
 ## Database Logging
 
 ### Every query is stored in SQLite:
-
-user query
-
-model response
-
-timestamp
-
-latency
-
-model version
+- user query
+- model response
+- timestamp
+- latency
+- model version
 
 ### View manually:
-
+```bash
 sqlite3 app/db/queries.db
 SELECT * FROM querylog;
+```
 
 ## Model Fine-Tuning
-
 The LoRA training was performed using:
-
 - transformers
-
 - peft
-
 - SFTTrainer (from TRL)
-
 - Kaggle → Bitext Customer Support dataset
 
 ### Output adapters are stored in:
-
 model/adapters/checkpoint-939/
 
 ## License
-
 MIT License (add LICENSE file if needed).
