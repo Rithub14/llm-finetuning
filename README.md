@@ -22,7 +22,8 @@ It exposes a clean backend API and a simple chat UI for interacting with the mod
 
 - Production-style project structure + packaging
 
-📦 Project Structure
+## Project Structure
+```bash
 llm_finetuning/
 ├── app/
 │   ├── api/            # FastAPI routes
@@ -43,6 +44,7 @@ llm_finetuning/
 ├── Makefile
 ├── README.md
 └── .gitignore
+```
 
 ## Installation
 1️⃣ Create environment
@@ -60,7 +62,7 @@ Streamlit automatically runs in background on port 8001.
 
 Open browser:
 
-http://localhost:8000/
+http://localhost:8001
 
 ## Database Logging
 
