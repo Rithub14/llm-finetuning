@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import requests
 
@@ -9,8 +10,9 @@ st.title("🤖 Customer Support Assistant")
 if "history" not in st.session_state:
     st.session_state.history = []
 
+BACKEND_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
 def ask_backend(message: str):
-    url = "http://127.0.0.1:8000/generate/"
+    url = f"{BACKEND_URL}/generate/"
     payload = {"query": message}
     response = requests.post(url, json=payload)
     return response.json()["response"]
