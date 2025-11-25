@@ -28,3 +28,14 @@ uv.lock
 
 # Cache
 .cache/
+
+# SQLite DB
+app/db/*.db
+
+# Streamlit
+.streamlit/
+frontend/.streamlit/
+
+# HuggingFace cache
+huggingface/
+.cache/huggingface/
